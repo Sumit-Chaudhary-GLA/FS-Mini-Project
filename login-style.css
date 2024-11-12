@@ -184,6 +184,7 @@ body{
     font-weight: 400;
     letter-spacing: 0px;
     text-align: center;
+    margin-bottom: -5%;
 }
 
 .box form .input-box{
@@ -256,13 +257,12 @@ body{
 }
 
 .box form .Links a{
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 0.75em;
     font-family: Arial;
     font-weight: bold;
     color: #8f8f8f;
     text-decoration: none;
-    padding-top: 50%;
 }
 
 .box form .Links a:hover,
@@ -280,7 +280,7 @@ body{
     border-radius: 4px;
     font-weight: 400;
     width: 100px;
-    margin-top: 10px;
+    margin-left: 35%;
 }
 
 .box form input[type = "submit"]:active{
