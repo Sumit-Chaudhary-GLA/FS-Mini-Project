@@ -5,6 +5,14 @@
     font-family: "Passion One", Arial;
 }
 
+#home-image{
+    position: absolute;
+    width: 100%;
+    filter: brightness(0.5);
+    z-index: -10;
+    
+}
+
 .nav-bar {
     height: 13vh;
     width: 100%;
@@ -82,7 +90,6 @@
 }
 
 .hero-section {
-    background-color: #333;
     position: relative;
     height: 100vh;
     margin-top: 0vh;
@@ -120,7 +127,7 @@
     transition: all 0.25s ease-in; 
 }
 
-.hero-section img{
+/* .hero-section img{
     position: absolute;
     left: 0;
     top: 0;
@@ -132,7 +139,7 @@
     filter: brightness(0.5);
     
     
-}
+} */
 
 
 .hero-section div{
@@ -147,14 +154,13 @@
 
 
 .featured-services {
-    background: linear-gradient(to right,#2e2e2e,white);
     padding-left: 4vw;
     padding-right: 4vw;
 }
 
 .featured-services h2{
     color: white;
-    font-size: 8vh;
+    font-size: 4vh;
     margin-top: -30px;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -165,6 +171,7 @@
     padding: 0;
     width: 28vw;
     border: none;
+    border-radius: 20px;
     transition-timing-function: ease-out;
     transition: all 0.25s;
     box-shadow: inset 0px 0px 3vh  rgba(20, 0, 0, 0.3);
@@ -174,18 +181,22 @@
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.25s;
+    overflow: hidden;
     
 }
 
 .service-images{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .card h5{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 800;
+    font-size: 3vh;
 }
 
 .row{
