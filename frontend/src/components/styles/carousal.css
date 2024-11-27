@@ -1,0 +1,29 @@
+.manual-carousel {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  
+}
+
+.carousel-images {
+  display: flex;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  filter: brightness(0.5);
+}
+
+.carousel-image.active {
+  opacity: 1;
+}

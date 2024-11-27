@@ -1,0 +1,150 @@
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Passion One", Arial, sans-serif;
+}
+
+/* Navbar Container */
+.nav-bar-2 {
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000; /* Pure black background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+/* Logo Section */
+.logo-label {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo-label img {
+    height: 8vh;
+}
+
+.label {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.label h2 {
+    font-size: 4vh;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.label span {
+    font-size: 1.8vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-buttons a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+}
+
+.navigation-buttons a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Icons Styling */
+.icon img {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1); /* Makes images white */
+}
+
+.icon:hover img {
+    cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(0); /* Makes images white */
+}
+
+/* Cart Icon Wrapper */
+.icon-wrapper {
+    position: relative;
+}
+
+/* Cart Badge */
+.cart-badge {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    background-color: rgb(0, 255, 34); /* Bright red for visibility */
+    color: white;
+    font-family: arial;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%; /* Circular badge */
+    padding: 2px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* Slight shadow for depth */
+}
+
+/* User Dropdown Container */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by default) */
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu when hovering over the user icon */
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for the dropdown items */
+.user-dropdown .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Change color on hover */
+.user-dropdown .dropdown-content a:hover {
+    background-color: #575757;
+}
+

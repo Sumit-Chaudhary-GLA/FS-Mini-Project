@@ -1,0 +1,121 @@
+
+body{
+    overflow-x: hidden;
+}
+.hero-section {
+    height: 100vh;
+    background: none;
+    position: relative;
+    margin-top: 0vh;    
+    
+}
+
+.hero-section h1 {
+    font-size: 4.3rem;
+    cursor: default;
+}
+
+.hero-section p {
+    font-size: 25px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: default;
+    
+}
+.hero-section div a{
+    text-decoration: none;
+    color:#23242a;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 3vh;
+    transition: all 0.20s ease-out;
+}
+
+.hero-section div a:hover{
+    background-color: #16da50;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.25s ease-in; 
+}
+
+
+.hero-section div{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top : 40vh;
+    
+}
+.featured-services h2{
+    color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    
+}
+
+.featured-services {
+    background: none;
+    /* background: linear-gradient(to right,#2e2e2e,white); */
+    padding-left: 4vw;
+    padding-right: 4vw;
+    
+}
+
+
+.card{
+    padding: 0;
+    width: 28vw;
+    border: none;
+    transition-timing-function: ease-out;
+    transition: all 0.25s;
+    box-shadow: inset 0px 0px 3vh  rgba(20, 0, 0, 0.3);
+    
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.25s;
+    
+    
+}
+
+.service-images{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.card h5{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.row{
+    margin-top: 3vh;
+    justify-content: space-between;
+    
+}
+
+
+
+.row a{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #2e2e2e;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 20px;
+}

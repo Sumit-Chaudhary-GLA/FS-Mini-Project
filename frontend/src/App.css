@@ -1,0 +1,13 @@
+/* App.css or equivalent file */
+.page {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-exit {
+  opacity: 0;
+}
