@@ -15,10 +15,11 @@
     background: transparent;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.);
     /* border-bottom: solid rgb(233, 241, 248) 1px; */
-    z-index: 1000; /* Ensures the navbar stays above other content */
+    z-index: 10000; /* Ensures the navbar stays above other content */
 }
 
 .navigation-buttons {

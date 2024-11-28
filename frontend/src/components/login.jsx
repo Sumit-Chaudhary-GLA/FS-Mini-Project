@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
-const Login = () => {
+const Login = ({ onLogin }) => {
     const [userName, setUserName] = useState();
     const [password, setPassword] = useState();
     const navigate = useNavigate();
@@ -18,14 +18,16 @@ const Login = () => {
             .then(result => {
                 if (result.data.status === "Success") {
                     // Store JWT token in localStorage on successful login
-                    localStorage.setItem('authToken', result.data.token);
-
+                    const token = result.data.token;
+                    localStorage.setItem('authToken', token);
+                    onLogin(token);
                     // Redirect to home page after login
                     navigate('/home');
                     
                 } else {
                     // Handle failure (incorrect password or user not found)
                     console.log(result.data); // Log the failure message from the server
+                    document.querySelector(".alert").innerText = result.data; 
                 }
             })
             .catch(err => {

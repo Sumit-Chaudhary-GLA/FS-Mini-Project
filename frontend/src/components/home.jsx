@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './styles/home.css';  
-import image1 from './carousal-images/1.jpg';
 import image2 from './carousal-images/2.jpg';
 import image3 from './carousal-images/3.jpg';
 import image4 from './carousal-images/4.jpg';

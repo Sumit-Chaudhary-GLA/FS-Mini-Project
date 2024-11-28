@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');  // Import jsonwebtoken
 const customersModel = require("./models/customers");
+const checkoutModel = require("./models/checkout");
 
 const app = express();
 app.use(express.json());
@@ -41,6 +42,13 @@ app.post('/register', (req, res) => {
         .then(customer => res.json(customer))
         .catch(err => res.json(err));
 });
+
+// Checkout Route
+app.post("/submitCheckout", (req, res) => {
+    checkoutModel.create(req.body)  // Create the checkout entry
+      .then(order => res.json(order))  // Send the created order in the response
+      .catch(err => res.json(err));  // Handle any errors that occur
+  });
 
 app.listen(3001, () => {
     console.log("Server is running on port 3001");

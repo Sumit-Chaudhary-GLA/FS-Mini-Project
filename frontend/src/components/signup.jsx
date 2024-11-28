@@ -73,7 +73,8 @@ const SignupForm = () => {
             </div>
 
             <div className="input-gender">
-              <select id="signupGender" value = "Male" onChange={(e)=>setGender(e.target.value)}>
+              <select id="signupGender"onChange={(e)=>setGender(e.target.value)}>
+                <option value="">--Select Gender--</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Prefer not to say">Prefer Not to say</option>

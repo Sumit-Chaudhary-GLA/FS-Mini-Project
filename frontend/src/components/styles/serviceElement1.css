@@ -1,77 +1,89 @@
-  /* Card Styling */
+/* Card Styling */
+
+
 .service-card {
-    margin-top: 15vh;
-    position: absolute;
-    background: #23242a; /* Card background matches the surrounding area */
-    border: 1px solid #23242a; /* Card border color */
-    border-radius: 15px;
-    overflow: hidden;
-    width: 100%;
-    color: white; /* Ensure text inside the card is visible */
-  }
+  margin-bottom: 50px;
+  background: #23242a; /* Card background matches the surrounding area */
+  border: 1px solid #23242a; /* Card border color */
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  color: white; /* Ensure text inside the card is visible */
+  font-family: 'Roboto', Arial, sans-serif; /* More readable font */
+}
+
+h1{
+  font-size: 80px;
+}
+
+/* Main Image Section */
+.main-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
   
-  /* Main Image Section */
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.text-overlay p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', Arial, sans-serif; /* More readable font */
+}
+
+button {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto', Arial, sans-serif; /* More readable font */
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: white;
+  color: #007bff;
+  transform: scale(1.04);
+  transition: all 0.25s;
+}
+
+/* Smaller Images */
+.col-6 img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.col-6 img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .main-image {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-  .main-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .text-overlay p {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-  }
-  
-  button {
-    border: none;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Smaller Images */
-  .col-6 img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .col-6 img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .main-image {
       height: 200px;
-    }
-  
-    .col-6 img {
-      height: 120px;
-    }
   }
-      
+
+  .col-6 img {
+      height: 120px;
+  }
+}
